@@ -220,7 +220,7 @@ export default function MovimentacaoDrift({ tipo, onBack, showToast, registerLea
       <div className="panel">
         <div className="panel-head">
           <h3>Medições</h3>
-          <span style={{ margin: 0, fontSize: '12px', color: 'var(--text-3)' }}>3 leituras por posição · 9 no total</span>
+          <span style={{ margin: 0, fontSize: '13px', color: 'var(--text-3)' }}>3 leituras por posição · 9 no total</span>
         </div>
 
         <div className="meas-grid">
