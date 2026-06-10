@@ -4,9 +4,9 @@ import { listDrifts, listResponsaveis, createMovimentacao } from '../db.js'
 import { formatDateTime, average, fmtNum, fmtNum2, minMax, flatMedicoes, parseNum } from '../utils.js'
 
 const POSICOES = [
-  { key: 'pe', label: 'Posição PÉ' },
-  { key: 'centro', label: 'Posição CENTRO' },
-  { key: 'ponta', label: 'Posição PONTA' },
+  { key: 'pe', label: 'PÉ' },
+  { key: 'centro', label: 'CENTRO' },
+  { key: 'ponta', label: 'PONTA' },
 ]
 
 const emptyMedicoes = () => ({
@@ -220,7 +220,7 @@ export default function MovimentacaoDrift({ tipo, onBack, showToast, registerLea
       <div className="panel">
         <div className="panel-head">
           <h3>Medições</h3>
-          <span className="esc-hint">3 leituras por posição · 9 no total</span>
+          <span style={{ margin: 0, fontSize: '12px', color: 'var(--text-3)' }}>3 leituras por posição · 9 no total</span>
         </div>
 
         <div className="meas-grid">
