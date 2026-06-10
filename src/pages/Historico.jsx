@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import PageHeader from '../components/PageHeader.jsx'
 import { listMovimentacoes } from '../db.js'
-import { formatDateTime, isoDateOnly, fmtNum, minMax, flatMedicoes } from '../utils.js'
+import { formatDateTime, isoDateOnly, fmtNum, fmtNum2, minMax, flatMedicoes } from '../utils.js'
 
 // Classifica a ordem de produção: LA -> Laminação, LQ -> Tratamento Térmico
 function tipoOrdem(op) {
@@ -402,9 +402,9 @@ export default function Historico({ onBack }) {
                         </>
                       ) : '—'}
                     </td>
-                    <td className={`num${warn(vMin) ? ' meds-val warn' : ''}`}>{fmtNum(vMin)}</td>
-                    <td className="num">{fmtNum(reg.valorMedio)}</td>
-                    <td className={`num${warn(vMax) ? ' meds-val warn' : ''}`}>{fmtNum(vMax)}</td>
+                    <td className={`num${warn(vMin) ? ' meds-val warn' : ''}`}>{fmtNum2(vMin)}</td>
+                    <td className="num">{fmtNum2(reg.valorMedio)}</td>
+                    <td className={`num${warn(vMax) ? ' meds-val warn' : ''}`}>{fmtNum2(vMax)}</td>
                     <td style={{ minWidth: 150 }}>
                       <div style={{ fontSize: 13 }}>{reg.responsavelNome}</div>
                       <div style={{ fontSize: 12, color: 'var(--text-3)' }}>{formatDateTime(reg.dataHora)}</div>
