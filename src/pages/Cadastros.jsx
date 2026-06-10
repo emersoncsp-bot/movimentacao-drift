@@ -42,13 +42,13 @@ export default function Cadastros({ onBack, showToast, registerLeaveGuard, clear
           itemNome="drift"
           fields={[
             { key: 'ec', label: 'Código EC do drift', type: 'text', placeholder: 'Ex.: EC1004' },
-            { key: 'diametro', label: 'Diâmetro', type: 'number', placeholder: 'Ex.: 215,90' },
+            { key: 'diametro', label: 'Diâmetro [mm]', type: 'number', placeholder: 'Ex.: 215,90' },
           ]}
           searchKey="ec"
           searchLabel="Buscar por EC"
           columns={[
             { key: 'ec', label: 'Código EC', className: 'ec-cell' },
-            { key: 'diametro', label: 'Diâmetro', className: 'num', format: (v) => fmtNum(v) },
+            { key: 'diametro', label: 'Diâmetro [mm]', className: 'num', format: (v) => fmtNum(v) },
           ]}
         />
       ) : (
