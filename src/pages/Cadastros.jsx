@@ -41,8 +41,8 @@ export default function Cadastros({ onBack, showToast, registerLeaveGuard, clear
           showToast={showToast}
           itemNome="drift"
           fields={[
-            { key: 'ec', label: 'Código EC do drift', type: 'text', placeholder: 'Ex.: EC-1004' },
-            { key: 'diametro', label: 'Diâmetro', type: 'number', placeholder: 'Ex.: 12.7' },
+            { key: 'ec', label: 'Código EC do drift', type: 'text', placeholder: 'Ex.: EC1004' },
+            { key: 'diametro', label: 'Diâmetro', type: 'number', placeholder: 'Ex.: 12.70' },
           ]}
           searchKey="ec"
           searchLabel="Buscar por EC"
@@ -61,8 +61,8 @@ export default function Cadastros({ onBack, showToast, registerLeaveGuard, clear
           showToast={showToast}
           itemNome="responsável"
           fields={[
-            { key: 'pn', label: 'PN', type: 'text', placeholder: 'Ex.: PN-004' },
-            { key: 'nome', label: 'Nome', type: 'text', placeholder: 'Ex.: João Pereira' },
+            { key: 'pn', label: 'PN', type: 'text', placeholder: 'Ex.: 701234' },
+            { key: 'nome', label: 'Nome', type: 'text', placeholder: 'Ex.: Nome Sobrenome' },
           ]}
           searchKey="pn"
           searchLabel="Buscar por PN"
