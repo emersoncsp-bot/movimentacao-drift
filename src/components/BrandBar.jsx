@@ -5,7 +5,7 @@ export default function BrandBar() {
     <nav className="navbar">
       <div className="navbar-inner">
         <div className="brand">
-          <span className="brand-mark"><GaugeIcon /></span>
+          <span className="brand-mark"><GaugeIcon size={26} /></span>
           <div className="brand-text">
             <span className="brand-name">Controle da Qualidade</span>
             <span className="brand-subtitle">Registro de medição e movimentação de DRIFTS</span>
