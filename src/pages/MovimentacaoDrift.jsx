@@ -65,7 +65,7 @@ export default function MovimentacaoDrift({ tipo, onBack, showToast, registerLea
   const media = average(todasMedicoes, 9)
   const { min: valMin, max: valMax } = minMax(todasMedicoes)
 
-  // Verifica quais células individuais estão abaixo do diâmetro do drift
+  // Verifica quais células individuais estão abaixo do  do drift
   const abaixo = (v) =>
     diametro !== '' && v !== '' && v !== null && Number(v) < Number(diametro)
 
@@ -178,20 +178,20 @@ export default function MovimentacaoDrift({ tipo, onBack, showToast, registerLea
       <div className="panel">
         <div className="grid-2">
           <div className="field">
-            <label>Código EC do drift</label>
+            <label>Código do drift</label>
             <input
               value={ec}
               onChange={(e) => setEc(e.target.value)}
-              placeholder="Digite o código EC…"
+              placeholder="Digite o código…"
               autoComplete="off"
               style={ecInvalid || (submitted && errors.ec) ? { borderColor: 'var(--red)' } : undefined}
             />
-            {ecInvalid && <div className="error-text">Código EC não cadastrado.</div>}
+            {ecInvalid && <div className="error-text">Código não cadastrado.</div>}
             {submitted && !ec.trim() && <div className="error-text">Informe o código EC.</div>}
           </div>
 
           <div className="field">
-            <label>Diâmetro</label>
+            <label>Diâmetro mínimo [mm]</label>
             <input
               className="num"
               readOnly
