@@ -301,8 +301,8 @@ export default function Historico({ onBack }) {
         </div>
         <div className="filters">
           <div className="field" style={{ margin: 0 }}>
-            <label>EC do drift</label>
-            <input value={fEc} onChange={(e) => setFEc(e.target.value)} placeholder="Ex.: EC-1001" />
+            <label>Código do drift</label>
+            <input value={fEc} onChange={(e) => setFEc(e.target.value)} placeholder="Ex.: 1001" />
           </div>
           <div className="field" style={{ margin: 0 }}>
             <label>Ordem de produção</label>
@@ -314,7 +314,7 @@ export default function Historico({ onBack }) {
           </div>
           <div className="field" style={{ margin: 0 }}>
             <label>Diâmetro do drift</label>
-            <input value={fDiametro} onChange={(e) => setFDiametro(e.target.value)} placeholder="Ex.: 12.7" />
+            <input value={fDiametro} onChange={(e) => setFDiametro(e.target.value)} placeholder="Ex.: 220.45" />
           </div>
         </div>
       </div>
