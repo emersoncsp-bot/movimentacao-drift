@@ -41,7 +41,7 @@ export default function Cadastros({ onBack, showToast, registerLeaveGuard, clear
           showToast={showToast}
           itemNome="drift"
           fields={[
-            { key: 'ec', label: 'Código EC do drift', type: 'text', placeholder: 'Ex.: EC1004' },
+            { key: 'ec', label: 'Código do drift', type: 'text', placeholder: 'Ex.: 1004' },
             { key: 'diametro', label: 'Diâmetro [mm]', type: 'number', placeholder: 'Ex.: 215,90' },
           ]}
           searchKey="ec"
